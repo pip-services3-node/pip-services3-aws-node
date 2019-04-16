@@ -9,10 +9,10 @@ It contains components for AWS cloud platform:
 
 Quick Links:
 
-* [Downloads](https://github.com/pip-services-node/pip-services-aws-node/blob/master/doc/Downloads.md)
+* [Downloads](https://github.com/pip-services-node/pip-services-aws-node/blob/master/docs/Downloads.md)
 * [API Reference](https://pip-services3-node.github.io/pip-services3-aws-node/globals.html)
-* [Building and Testing](https://github.com/pip-services/pip-services-aws-node/blob/master/doc/Development.md)
-* [Contributing](https://github.com/pip-services/pip-services-aws-node/blob/master/doc/Development.md/#contrib)
+* [Building and Testing](https://github.com/pip-services/pip-services-aws-node/blob/master/docs/Development.md)
+* [Contributing](https://github.com/pip-services/pip-services-aws-node/blob/master/docs/Development.md/#contrib)
 
 ## Acknowledgements
 
