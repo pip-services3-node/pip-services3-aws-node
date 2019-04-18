@@ -1,6 +1,6 @@
 {
     "name": "pip-services3-aws-node",
-    "version": "3.0.5",
+    "version": "3.0.6",
     "author": "Conceptual Vision Consulting LLC",
     "description": "AWS-specific components for Pip.Services in Node.js",
     "contributors": [
