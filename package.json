@@ -1,5 +1,5 @@
 {
-    "name": "pip-services5-aws-node",
+    "name": "pip-services3-aws-node",
     "version": "3.0.5",
     "author": "Conceptual Vision Consulting LLC",
     "description": "AWS-specific components for Pip.Services in Node.js",
