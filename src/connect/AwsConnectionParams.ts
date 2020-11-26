@@ -19,7 +19,7 @@ import { ConnectionParams } from 'pip-services3-components-node';
  * - client_key:    alternative to access_key
  * - secret_key:    alternative to access_key
  * 
- * In addition to standard parameters [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/auth.credentialparams.html CredentialParams]] may contain any number of custom parameters
+ * In addition to standard parameters [[https://pip-services3-node.github.io/pip-services3-components-node/classes/auth.credentialparams.html CredentialParams]] may contain any number of custom parameters
  * 
  * @see [[AwsConnectionResolver]]
  * 
