@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LambdaClient | pip-services-aws-node</title>
+	<title>LambdaClient | pip-services3-aws-node</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">pip-services-aws-node</a>
+					<a href="../index.html" class="title">pip-services3-aws-node</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -77,12 +77,12 @@
 					<h3 id="configuration-parameters">Configuration parameters</h3>
 					<ul>
 						<li>connections:<ul>
-								<li>discovery_key:               (optional) a key to retrieve the connection from <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a></li>
+								<li>discovery_key:               (optional) a key to retrieve the connection from <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a></li>
 								<li>region:                      (optional) AWS region</li>
 							</ul>
 						</li>
 						<li>credentials:<ul>
-								<li>store_key:                   (optional) a key to retrieve the credentials from <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/auth.icredentialstore.html" class="external">ICredentialStore</a></li>
+								<li>store_key:                   (optional) a key to retrieve the credentials from <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/auth.icredentialstore.html" class="external">ICredentialStore</a></li>
 								<li>access_id:                   AWS access/client id</li>
 								<li>access_key:                  AWS access/client id</li>
 							</ul>
@@ -94,9 +94,9 @@
 					</ul>
 					<h3 id="references">References</h3>
 					<ul>
-						<li><code>*:logger:*:*:1.0</code>            (optional) <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/log.ilogger.html" class="external">ILogger</a> components to pass log messages</li>
-						<li><code>*:counters:*:*:1.0</code>          (optional) <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/count.icounters.html" class="external">ICounters</a> components to pass collected measurements</li>
-						<li><code>*:discovery:*:*:1.0</code>         (optional) <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> services to resolve connection</li>
+						<li><code>*:logger:*:*:1.0</code>            (optional) <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/log.ilogger.html" class="external">ILogger</a> components to pass log messages</li>
+						<li><code>*:counters:*:*:1.0</code>          (optional) <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/count.icounters.html" class="external">ICounters</a> components to pass collected measurements</li>
+						<li><code>*:discovery:*:*:1.0</code>         (optional) <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> services to resolve connection</li>
 						<li><code>*:credential-store:*:*:1.0</code>  (optional) Credential stores to resolve credentials</li>
 					</ul>
 					<dl class="tsd-comment-tags">
@@ -152,9 +152,9 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">IOpenable</span></li>
-					<li><span class="tsd-signature-type">IConfigurable</span></li>
-					<li><span class="tsd-signature-type">IReferenceable</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -198,7 +198,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_connection<span class="tsd-signature-symbol">:</span> <a href="connect.awsconnectionparams.html" class="tsd-signature-type">AwsConnectionParams</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L92">clients/LambdaClient.ts:92</a></li>
+							<li>Defined in clients/LambdaClient.ts:92</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,7 +213,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_connection<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="connect.awsconnectionresolver.html" class="tsd-signature-type">AwsConnectionResolver</a><span class="tsd-signature-symbol"> =&nbsp;new AwsConnectionResolver()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L102">clients/LambdaClient.ts:102</a></li>
+							<li>Defined in clients/LambdaClient.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,7 +228,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_counters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CompositeCounters</span><span class="tsd-signature-symbol"> =&nbsp;new CompositeCounters()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L110">clients/LambdaClient.ts:110</a></li>
+							<li>Defined in clients/LambdaClient.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -243,7 +243,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_dependency<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DependencyResolver</span><span class="tsd-signature-symbol"> =&nbsp;new DependencyResolver()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L98">clients/LambdaClient.ts:98</a></li>
+							<li>Defined in clients/LambdaClient.ts:98</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -258,7 +258,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_lambda<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L84">clients/LambdaClient.ts:84</a></li>
+							<li>Defined in clients/LambdaClient.ts:84</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,7 +273,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CompositeLogger</span><span class="tsd-signature-symbol"> =&nbsp;new CompositeLogger()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L106">clients/LambdaClient.ts:106</a></li>
+							<li>Defined in clients/LambdaClient.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -288,7 +288,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 					<div class="tsd-signature tsd-kind-icon">_opened<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L88">clients/LambdaClient.ts:88</a></li>
+							<li>Defined in clients/LambdaClient.ts:88</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -310,7 +310,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L284">clients/LambdaClient.ts:284</a></li>
+									<li>Defined in clients/LambdaClient.ts:284</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +380,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L297">clients/LambdaClient.ts:297</a></li>
+									<li>Defined in clients/LambdaClient.ts:297</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +447,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L206">clients/LambdaClient.ts:206</a></li>
+									<li>Defined in clients/LambdaClient.ts:206</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -502,7 +502,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L117">clients/LambdaClient.ts:117</a></li>
+									<li>Defined in clients/LambdaClient.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -533,7 +533,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L144">clients/LambdaClient.ts:144</a></li>
+									<li>Defined in clients/LambdaClient.ts:144</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -572,7 +572,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L221">clients/LambdaClient.ts:221</a></li>
+									<li>Defined in clients/LambdaClient.ts:221</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,7 +648,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L154">clients/LambdaClient.ts:154</a></li>
+									<li>Defined in clients/LambdaClient.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +671,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L164">clients/LambdaClient.ts:164</a></li>
+									<li>Defined in clients/LambdaClient.ts:164</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -726,7 +726,7 @@ client.getData(<span class="hljs-string">"123"</span>, <span class="hljs-string"
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/clients/LambdaClient.ts#L129">clients/LambdaClient.ts:129</a></li>
+									<li>Defined in clients/LambdaClient.ts:129</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

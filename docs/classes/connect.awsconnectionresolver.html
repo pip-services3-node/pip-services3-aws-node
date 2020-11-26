@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AwsConnectionResolver | pip-services-aws-node</title>
+	<title>AwsConnectionResolver | pip-services3-aws-node</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">pip-services-aws-node</a>
+					<a href="../index.html" class="title">pip-services3-aws-node</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -76,7 +76,7 @@
 					<h3 id="configuration-parameters">Configuration parameters</h3>
 					<ul>
 						<li>connections:<ul>
-								<li>discovery_key:               (optional) a key to retrieve the connection from <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a></li>
+								<li>discovery_key:               (optional) a key to retrieve the connection from <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a></li>
 								<li>region:                      (optional) AWS region</li>
 								<li>partition:                   (optional) AWS partition</li>
 								<li>service:                     (optional) AWS service</li>
@@ -86,7 +86,7 @@
 							</ul>
 						</li>
 						<li>credentials:<ul>
-								<li>store_key:                   (optional) a key to retrieve the credentials from <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/auth.icredentialstore.html" class="external">ICredentialStore</a></li>
+								<li>store_key:                   (optional) a key to retrieve the credentials from <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/auth.icredentialstore.html" class="external">ICredentialStore</a></li>
 								<li>access_id:                   AWS access/client id</li>
 								<li>access_key:                  AWS access/client id</li>
 							</ul>
@@ -94,15 +94,15 @@
 					</ul>
 					<h3 id="references">References</h3>
 					<ul>
-						<li><code>*:discovery:*:*:1.0</code>         (optional) <a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> services to resolve connections</li>
+						<li><code>*:discovery:*:*:1.0</code>         (optional) <a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> services to resolve connections</li>
 						<li><code>*:credential-store:*:*:1.0</code>  (optional) Credential stores to resolve credentials</li>
 					</ul>
 					<dl class="tsd-comment-tags">
 						<dt>see</dt>
-						<dd><p><a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/connect.connectionparams.html" class="external">ConnectionParams</a> (in the Pip.Services components package)</p>
+						<dd><p><a href="https://pip-services3-node.github.io/pip-services3-components-node/classes/connect.connectionparams.html" class="external">ConnectionParams</a> (in the Pip.Services components package)</p>
 						</dd>
 						<dt>see</dt>
-						<dd><p><a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> (in the Pip.Services components package)</p>
+						<dd><p><a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> (in the Pip.Services components package)</p>
 							<h3 id="example">Example</h3>
 							<pre><code><span class="hljs-keyword">let</span> config = <span class="hljs-type">ConfigParams</span>.fromTuples(
     <span class="hljs-string">"connection.region"</span>, <span class="hljs-string">"us-east1"</span>,
@@ -134,8 +134,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">IConfigurable</span></li>
-					<li><span class="tsd-signature-type">IReferenceable</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
+					<li><span class="tsd-signature-type">any</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -168,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">_connection<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ConnectionResolver</span><span class="tsd-signature-symbol"> =&nbsp;new ConnectionResolver()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/connect/AwsConnectionResolver.ts#L67">connect/AwsConnectionResolver.ts:67</a></li>
+							<li>Defined in connect/AwsConnectionResolver.ts:67</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">_credential<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CredentialResolver</span><span class="tsd-signature-symbol"> =&nbsp;new CredentialResolver()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/connect/AwsConnectionResolver.ts#L71">connect/AwsConnectionResolver.ts:71</a></li>
+							<li>Defined in connect/AwsConnectionResolver.ts:71</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -205,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/connect/AwsConnectionResolver.ts#L78">connect/AwsConnectionResolver.ts:78</a></li>
+									<li>Defined in connect/AwsConnectionResolver.ts:78</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/connect/AwsConnectionResolver.ts#L102">connect/AwsConnectionResolver.ts:102</a></li>
+									<li>Defined in connect/AwsConnectionResolver.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,7 +246,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>see</dt>
-									<dd><p><a href="https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> (in the Pip.Services components package)</p>
+									<dd><p><a href="https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html" class="external">IDiscovery</a> (in the Pip.Services components package)</p>
 									</dd>
 								</dl>
 							</div>
@@ -300,7 +300,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pip-services-node/pip-services-aws-node/blob/a2e04a3/src/connect/AwsConnectionResolver.ts#L88">connect/AwsConnectionResolver.ts:88</a></li>
+									<li>Defined in connect/AwsConnectionResolver.ts:88</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
