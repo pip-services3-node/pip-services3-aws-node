@@ -4,7 +4,7 @@ This module is a part of the [Pip.Services](http://pipservices.org) polyglot mic
 
 This module contains components for supporting work with the AWS cloud platform.
 
-This module contains the following packages:
+The module contains the following packages:
 - **Build** - factories for constructing module components
 - **Clients** - client components for working with Lambda AWS
 - **Connect** - components of installation and connection settings
