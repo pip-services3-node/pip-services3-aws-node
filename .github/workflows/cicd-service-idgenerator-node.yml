@@ -1,0 +1,52 @@
+name: Pip.Services AWS toolkit in Node.js
+
+on: 
+  push:
+    paths:
+    - '**'
+    - '!README.md'
+
+defaults:
+
+jobs:
+  Default:
+    if: "!contains(github.event.head_commit.message, '[skip-ci]')"
+    steps:
+    - uses: actions/checkout@main
+  
+    ############# Prepare #############
+
+    - name: Save build number and component version
+      id: build_info
+      run: |
+        echo "##[set-output name=build_number;]$GITHUB_RUN_NUMBER"
+        echo "##[set-output name=component_version;]$(jq -r '.version' ./package.json)"
+        echo "##[set-output name=component_name;]$(jq -r '.name' ./component.json)"
+
+    ############# Build and test #############
+
+    - uses: Amadevus/pwsh-script@v2
+
+    - name: Build the component
+      run: ./build.ps1
+
+    - name: Test the component
+      run: ./test.ps1
+
+    ############# Release #############
+
+    - name: Tag branch with the build number
+      uses: tvdias/github-tagger@v0.0.1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        tag: "${{ steps.build_info.outputs.component_name }}/v${{ steps.build_info.outputs.component_version }}-${{ steps.build_info.outputs.build_number }}"
+
+    # - name: Release binary artifacts
+    #   run: ./release.ps1
+
+    ############# Clear #############
+
+    - name: Clean temporary build artifacts
+      if: ${{ always() }}
+      run: ./clean.ps1
+    
