@@ -13,8 +13,10 @@ if ($component.version -ne $package.version) {
 
 # Automatically login to npm registry
 if ($env:NPM_USER -ne $null -and $env:NPM_PASS -ne $null -and $env:NPM_EMAIL -ne $null) {
-    if (npm whoami -ne $env:NPM_USER) {
-        npm-cli-login
+    $currentUser = npm whoami
+    if ($currentUser -ne $env:NPM_USER) {
+        Write-Host "logging to npmjs registry..."
+        npm-cli-adduser
     }
 } 
 
