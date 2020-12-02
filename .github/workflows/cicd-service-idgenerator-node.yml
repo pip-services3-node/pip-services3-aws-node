@@ -31,6 +31,12 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y powershell
 
+    - name: Install npm cli and node
+      run: |
+        sudo apt-get install curl
+        curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+        sudo apt-get install nodejs
+
     ############# Build and test #############
 
     - name: Build the component
@@ -47,8 +53,12 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         tag: "${{ steps.build_info.outputs.component_name }}/v${{ steps.build_info.outputs.component_version }}-${{ steps.build_info.outputs.build_number }}"
 
-    # - name: Release binary artifacts
-    #   run: ./release.ps1
+    - name: Release binary artifacts
+      run: ./release.ps1
+      env: 
+        NPM_USER: ${{ secrets.NPM_USER }}
+        NPM_PASS: ${{ secrets.NPM_PASS }}
+        NPM_EMAIL: ${{ secrets.NPM_EMAIL }}
 
     ############# Clear #############
 
