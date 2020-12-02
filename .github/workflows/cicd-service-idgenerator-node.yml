@@ -6,8 +6,6 @@ on:
     - '**'
     - '!README.md'
 
-defaults:
-
 jobs:
   Default:
     runs-on: ubuntu-16.04
