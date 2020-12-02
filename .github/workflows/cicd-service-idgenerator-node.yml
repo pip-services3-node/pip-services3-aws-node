@@ -33,8 +33,6 @@ jobs:
 
     ############# Build and test #############
 
-    # - uses: Amadevus/pwsh-script@v2
-
     - name: Build the component
       run: ./build.ps1
 
