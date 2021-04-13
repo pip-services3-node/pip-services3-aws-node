@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AwsConnectionParams = void 0;
 /** @module connect */
 const pip_services3_commons_node_1 = require("pip-services3-commons-node");
 const pip_services3_commons_node_2 = require("pip-services3-commons-node");
@@ -20,7 +21,7 @@ const pip_services3_components_node_2 = require("pip-services3-components-node")
  * - client_key:    alternative to access_key
  * - secret_key:    alternative to access_key
  *
- * In addition to standard parameters [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/auth.credentialparams.html CredentialParams]] may contain any number of custom parameters
+ * In addition to standard parameters [[https://pip-services3-node.github.io/pip-services3-components-node/classes/auth.credentialparams.html CredentialParams]] may contain any number of custom parameters
  *
  * @see [[AwsConnectionResolver]]
  *

@@ -6,7 +6,7 @@ import { ConfigParams } from 'pip-services3-commons-node';
 import { DependencyResolver } from 'pip-services3-commons-node';
 import { CompositeLogger } from 'pip-services3-components-node';
 import { CompositeCounters } from 'pip-services3-components-node';
-import { Timing } from 'pip-services3-components-node';
+import { CounterTiming } from 'pip-services3-components-node';
 import { AwsConnectionParams } from '../connect/AwsConnectionParams';
 import { AwsConnectionResolver } from '../connect/AwsConnectionResolver';
 /**
@@ -18,10 +18,10 @@ import { AwsConnectionResolver } from '../connect/AwsConnectionResolver';
  * ### Configuration parameters ###
  *
  * - connections:
- *     - discovery_key:               (optional) a key to retrieve the connection from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]]
+ *     - discovery_key:               (optional) a key to retrieve the connection from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]]
  *     - region:                      (optional) AWS region
  * - credentials:
- *     - store_key:                   (optional) a key to retrieve the credentials from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/auth.icredentialstore.html ICredentialStore]]
+ *     - store_key:                   (optional) a key to retrieve the credentials from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/auth.icredentialstore.html ICredentialStore]]
  *     - access_id:                   AWS access/client id
  *     - access_key:                  AWS access/client id
  * - options:
@@ -29,9 +29,9 @@ import { AwsConnectionResolver } from '../connect/AwsConnectionResolver';
  *
  * ### References ###
  *
- * - <code>\*:logger:\*:\*:1.0</code>            (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/log.ilogger.html ILogger]] components to pass log messages
- * - <code>\*:counters:\*:\*:1.0</code>          (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/count.icounters.html ICounters]] components to pass collected measurements
- * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connection
+ * - <code>\*:logger:\*:\*:1.0</code>            (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/log.ilogger.html ILogger]] components to pass log messages
+ * - <code>\*:counters:\*:\*:1.0</code>          (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/count.icounters.html ICounters]] components to pass collected measurements
+ * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connection
  * - <code>\*:credential-store:\*:\*:1.0</code>  (optional) Credential stores to resolve credentials
  *
  * @see [[LambdaFunction]]
@@ -110,13 +110,13 @@ export declare abstract class LambdaClient implements IOpenable, IConfigurable, 
     setReferences(references: IReferences): void;
     /**
      * Adds instrumentation to log calls and measure call time.
-     * It returns a Timing object that is used to end the time measurement.
+     * It returns a CounterTiming object that is used to end the time measurement.
      *
      * @param correlationId     (optional) transaction id to trace execution through call chain.
      * @param name              a method name.
-     * @returns Timing object to end the time measurement.
+     * @returns CounterTiming object to end the time measurement.
      */
-    protected instrument(correlationId: string, name: string): Timing;
+    protected instrument(correlationId: string, name: string): CounterTiming;
     /**
      * Checks if the component is opened.
      *

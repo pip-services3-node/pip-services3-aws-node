@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module clients */
 var LambdaClient_1 = require("./LambdaClient");
-exports.LambdaClient = LambdaClient_1.LambdaClient;
+Object.defineProperty(exports, "LambdaClient", { enumerable: true, get: function () { return LambdaClient_1.LambdaClient; } });
 var CommandableLambdaClient_1 = require("./CommandableLambdaClient");
-exports.CommandableLambdaClient = CommandableLambdaClient_1.CommandableLambdaClient;
+Object.defineProperty(exports, "CommandableLambdaClient", { enumerable: true, get: function () { return CommandableLambdaClient_1.CommandableLambdaClient; } });
 //# sourceMappingURL=index.js.map

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CloudWatchCounters = void 0;
 /** @module count */
 /** @hidden */
 let async = require('async');
@@ -15,10 +16,10 @@ const CloudWatchUnit_1 = require("./CloudWatchUnit");
  * ### Configuration parameters ###
  *
  * - connections:
- *     - discovery_key:         (optional) a key to retrieve the connection from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]]
+ *     - discovery_key:         (optional) a key to retrieve the connection from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]]
  *     - region:                (optional) AWS region
  * - credentials:
- *     - store_key:             (optional) a key to retrieve the credentials from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/auth.icredentialstore.html ICredentialStore]]
+ *     - store_key:             (optional) a key to retrieve the credentials from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/auth.icredentialstore.html ICredentialStore]]
  *     - access_id:             AWS access/client id
  *     - access_key:            AWS access/client id
  * - options:
@@ -27,13 +28,13 @@ const CloudWatchUnit_1 = require("./CloudWatchUnit");
  *
  * ### References ###
  *
- * - <code>\*:context-info:\*:\*:1.0</code>      (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/info.contextinfo.html ContextInfo]] to detect the context id and specify counters source
- * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connections
+ * - <code>\*:context-info:\*:\*:1.0</code>      (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/classes/info.contextinfo.html ContextInfo]] to detect the context id and specify counters source
+ * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connections
  * - <code>\*:credential-store:\*:\*:1.0</code>  (optional) Credential stores to resolve credentials
  *
- * @see [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/count.counter.html Counter]] (in the Pip.Services components package)
- * @see [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/count.cachedcounters.html CachedCounters]] (in the Pip.Services components package)
- * @see [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/classes/log.compositelogger.html CompositeLogger]] (in the Pip.Services components package)
+ * @see [[https://pip-services3-node.github.io/pip-services3-components-node/classes/count.counter.html Counter]] (in the Pip.Services components package)
+ * @see [[https://pip-services3-node.github.io/pip-services3-components-node/classes/count.cachedcounters.html CachedCounters]] (in the Pip.Services components package)
+ * @see [[https://pip-services3-node.github.io/pip-services3-components-node/classes/log.compositelogger.html CompositeLogger]] (in the Pip.Services components package)
  *
  * ### Example ###
  *
@@ -90,7 +91,7 @@ class CloudWatchCounters extends pip_services3_components_node_2.CachedCounters 
      * Sets references to dependent components.
      *
      * @param references 	references to locate the component dependencies.
-     * @see [[https://rawgit.com/pip-services-node/pip-services3-commons-node/master/doc/api/interfaces/refer.ireferences.html IReferences]] (in the Pip.Services commons package)
+     * @see [[https://pip-services3-node.github.io/pip-services3-commons-node/interfaces/refer.ireferences.html IReferences]] (in the Pip.Services commons package)
      */
     setReferences(references) {
         this._logger.setReferences(references);

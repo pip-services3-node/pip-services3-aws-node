@@ -1,6 +1,6 @@
 {
     "name": "pip-services3-aws-node",
-    "version": "3.0.7",
+    "version": "3.1.0",
     "author": "Conceptual Vision Consulting LLC",
     "description": "AWS-specific components for Pip.Services in Node.js",
     "contributors": [
@@ -37,7 +37,7 @@
         "pip-services3-commons-node": "^3.0.0",
         "pip-services3-components-node": "^3.0.0",
         "pip-services3-container-node": "^3.0.1",
-        "pip-services3-rpc-node": "^3.0.0"
+        "pip-services3-rpc-node": "^3.6.2"
     },
     "devDependencies": {
         "@types/node": "*",

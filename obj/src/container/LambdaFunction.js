@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LambdaFunction = void 0;
 /** @module container */
 /** @hidden */
 let _ = require('lodash');
@@ -27,18 +28,18 @@ const pip_services3_components_node_2 = require("pip-services3-components-node")
  * - dependencies:
  *     - controller:                  override for Controller dependency
  * - connections:
- *     - discovery_key:               (optional) a key to retrieve the connection from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]]
+ *     - discovery_key:               (optional) a key to retrieve the connection from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]]
  *     - region:                      (optional) AWS region
  * - credentials:
- *     - store_key:                   (optional) a key to retrieve the credentials from [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/auth.icredentialstore.html ICredentialStore]]
+ *     - store_key:                   (optional) a key to retrieve the credentials from [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/auth.icredentialstore.html ICredentialStore]]
  *     - access_id:                   AWS access/client id
  *     - access_key:                  AWS access/client id
  *
  * ### References ###
  *
- * - <code>\*:logger:\*:\*:1.0</code>            (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/log.ilogger.html ILogger]] components to pass log messages
- * - <code>\*:counters:\*:\*:1.0</code>          (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/count.icounters.html ICounters]] components to pass collected measurements
- * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://rawgit.com/pip-services-node/pip-services3-components-node/master/doc/api/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connection
+ * - <code>\*:logger:\*:\*:1.0</code>            (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/log.ilogger.html ILogger]] components to pass log messages
+ * - <code>\*:counters:\*:\*:1.0</code>          (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/count.icounters.html ICounters]] components to pass collected measurements
+ * - <code>\*:discovery:\*:\*:1.0</code>         (optional) [[https://pip-services3-node.github.io/pip-services3-components-node/interfaces/connect.idiscovery.html IDiscovery]] services to resolve connection
  * - <code>\*:credential-store:\*:\*:1.0</code>  (optional) Credential stores to resolve credentials
  *
  * @see [[LambdaClient]]
@@ -147,11 +148,11 @@ class LambdaFunction extends pip_services3_container_node_1.Container {
     }
     /**
      * Adds instrumentation to log calls and measure call time.
-     * It returns a Timing object that is used to end the time measurement.
+     * It returns a CounterTiming object that is used to end the time measurement.
      *
      * @param correlationId     (optional) transaction id to trace execution through call chain.
      * @param name              a method name.
-     * @returns Timing object to end the time measurement.
+     * @returns CounterTiming object to end the time measurement.
      */
     instrument(correlationId, name) {
         this._logger.trace(correlationId, "Executing %s method", name);

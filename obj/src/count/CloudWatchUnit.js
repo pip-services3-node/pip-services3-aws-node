@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CloudWatchUnit = void 0;
 /** @module count */
 /**
  * Constants that determine cloud watch units.
  */
 class CloudWatchUnit {
 }
+exports.CloudWatchUnit = CloudWatchUnit;
 CloudWatchUnit.Seconds = "Seconds";
 CloudWatchUnit.Microseconds = "Microseconds";
 CloudWatchUnit.Milliseconds = "Milliseconds";
@@ -33,5 +35,4 @@ CloudWatchUnit.Gigabits_Second = "Gigabits/Second";
 CloudWatchUnit.Terabits_Second = "Terabits/Second";
 CloudWatchUnit.Count_Second = "Count/Second";
 CloudWatchUnit.None = "None";
-exports.CloudWatchUnit = CloudWatchUnit;
 //# sourceMappingURL=CloudWatchUnit.js.map
