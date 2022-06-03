@@ -7,3 +7,4 @@
 /config/config.yaml
 *.local.sh
 package-lock.json
+.npmrc
