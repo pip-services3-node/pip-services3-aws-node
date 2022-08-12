@@ -1,6 +1,14 @@
 {
-    "name": "pip-services3-aws-node",
-    "registry": "pipdevs",
+    "name":  "pip-services3-aws-node",
+    "type": "microservice",
+    "language": "node",
     "version": "3.1.0",
-    "build": "0"
+    "build": 0,
+    "registry": "pipdevs",
+    "artifacts": [
+        {
+            "name":  "<name>",
+            "type": "npm"
+        }
+    ]
 }
