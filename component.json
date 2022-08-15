@@ -1,6 +1,6 @@
 {
     "name":  "pip-services3-aws-node",
-    "type": "microservice",
+    "type": "module",
     "language": "node",
     "version": "3.1.0",
     "build": 0,
